@@ -1,13 +1,19 @@
 package com.daf.onlineshopping.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.daf.shoppingbackend.dao.ProductDAO;
 
 @Controller
 public class PageController {
 
+	@Autowired
+	private ProductDAO productDAO;
+	
+	
 	@RequestMapping(value = {"/", "/home", "/index"})
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView("page");
@@ -36,6 +42,10 @@ public class PageController {
 	public ModelAndView order() {
 		ModelAndView mav = new ModelAndView("page");
 		mav.addObject("title", "Order");
+		
+		//passing product List
+		mav.addObject("products",productDAO.list());
+		
 		mav.addObject("userClickOrder", true);
 		return mav;
 	}

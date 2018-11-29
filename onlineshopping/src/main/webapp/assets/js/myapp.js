@@ -9,10 +9,14 @@ $(function() {
 		$('#contact').addClass('active');
 		break;
 	case 'Order':
-		$('#order').addClass('active');
+		$('#orders').addClass('active');
+		break;
 	default:
 		$('#home').addClass('active');
 		break;
 	}
+	
+	
+	
 	
 });

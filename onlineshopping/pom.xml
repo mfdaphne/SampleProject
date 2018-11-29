@@ -13,11 +13,11 @@
 		<spring.version>4.3.13.RELEASE</spring.version>
 	</properties>
 	<dependencies>
-	<dependency>
-	<groupId>com.daf</groupId>
-	<artifactId>shoppingbackend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	</dependency>
+		<dependency>
+			<groupId>com.daf</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -44,7 +44,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 	</dependencies>
 	<build>
 		<plugins>
