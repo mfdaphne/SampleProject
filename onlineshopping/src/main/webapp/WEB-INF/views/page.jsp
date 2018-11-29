@@ -52,6 +52,10 @@
 		<%@include file="about.jsp"%>
 	</c:if>
 	
+	<c:if test="${userClickOrder == true }"> 
+		<%@include file="order.jsp"%>
+	</c:if>
+	
 	<c:if test="${userClickContact == true }"> 
 		<%@include file="contact.jsp"%>
 	</c:if>

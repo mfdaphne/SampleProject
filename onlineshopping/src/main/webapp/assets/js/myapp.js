@@ -8,6 +8,8 @@ $(function() {
 	case 'Contact Us':
 		$('#contact').addClass('active');
 		break;
+	case 'Order':
+		$('#order').addClass('active');
 	default:
 		$('#home').addClass('active');
 		break;

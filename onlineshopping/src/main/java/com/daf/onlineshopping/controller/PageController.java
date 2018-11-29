@@ -32,4 +32,11 @@ public class PageController {
 		return mav;
 	}
 	
+	@RequestMapping(value = {"/order"})
+	public ModelAndView order() {
+		ModelAndView mav = new ModelAndView("page");
+		mav.addObject("title", "Order");
+		mav.addObject("userClickOrder", true);
+		return mav;
+	}
 }
